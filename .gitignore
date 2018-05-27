@@ -1,0 +1,5 @@
+_site/
+.sass-cache/
+.jekyll-metadata
+gitbook_source_code/node_modules
+gitbook_source_code/_book

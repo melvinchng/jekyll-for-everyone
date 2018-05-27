@@ -1,0 +1,17 @@
+<section class="section projects-section">
+    <h2 class="section-title"><i class="fa fa-code"></i>Individual Projects</h2>
+
+    {% for individual_project in site.data.cv_individual_projects %}
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title"><a href="{{ individual_project.link }}" target="_blank">{{ individual_project.title }}</a></h3>
+                <div class="time">{{ individual_project.time }}</div>
+            </div><!--//upper-row-->
+            <div class="company">{{ individual_project.company }}</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>{{ individual_project.info }}</p>
+        </div><!--//details-->
+    </div><!--//item-->
+    {% endfor %}

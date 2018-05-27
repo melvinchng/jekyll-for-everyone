@@ -1,0 +1,17 @@
+- name: Cooking
+  level: 70
+
+- name: Eating
+  level: 80
+
+- name: Honest
+  level: 95
+
+- name: Confident
+  level: 75
+
+- name: Loyal
+  level: 95
+
+- name: Sleeping
+  level: 60

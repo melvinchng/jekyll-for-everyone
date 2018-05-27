@@ -1,0 +1,19 @@
+<section class="section experiences-section">
+    <h2 class="section-title"><i class="fa fa-trophy"></i>Honors & Awards</h2>
+    
+    {% for award in site.data.cv_awards %}
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">{{ award.title }}</h3>
+                <div class="time">{{ award.time }}</div>
+            </div><!--//upper-row-->
+            <div class="company">{{ award.company }}</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>{{ award.info }}</p>  
+        </div><!--//details-->
+    </div><!--//item-->
+    {% endfor %}
+
+</section><!--//section-->

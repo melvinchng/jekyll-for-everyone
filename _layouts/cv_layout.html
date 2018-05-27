@@ -1,0 +1,20 @@
+---
+layout: compress_layout
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include cv_head.html %}
+
+  <body>
+    <div class="wrapper">
+      {% include cv_sidebar.html %}
+  
+      <div class="main-wrapper">   
+        {{content}}
+      </div><!--//main-body-->
+    </div>
+
+    {% include cv_footer.html %}
+    {% include cv_scripts.html %}
+  </body>
+</html> 

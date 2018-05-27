@@ -1,0 +1,9 @@
+<div class="interests-container container-block">
+    <h2 class="container-block-title">Related Courses</h2>
+        <ul class="list-unstyled interests-list">
+            {% for course in site.data.cv_courses %}
+                <li>{{ course.name }}</li>
+            {% endfor %}
+        </ul>
+    </div><!--//courses-->
+    

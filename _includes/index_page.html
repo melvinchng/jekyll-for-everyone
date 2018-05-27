@@ -1,0 +1,187 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="{{ "index_style/js/main.js" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"></script>
+
+<span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover" style="background-image"> <!-- background-cover.jpg @ uno.css -->
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+      <div class="panel-main__content">
+        <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
+          <img src="{{ site.baseurl }}/assets/images/{{ site.pic }}" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">{{ site.description }}</p>
+        <p class="panel-cover__description_tiny">{{ site.description_tiny }}</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              {% for link in site.data.index_links %}
+                <li class="navigation__item"><a href="/{{ link.link }}" title="{{ link.hover_text }}" class="blog-button">{{ link.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+  
+            {% if site.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.email }}" title="Email {{ site.email }}" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.github %}
+            <!-- GitHub -->
+            <li class="navigation__item">
+              <a href="https://www.github.com/{{ site.github }}" title="{{ site.github }} on GitHub" target="_blank">
+                <i class="icon icon-social-github"></i>
+                <span class="label">GitHub</span>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if site.linkedin %}
+            <!-- LinkedIn -->
+            <li class="navigation__item">
+              <a href="https://www.linkedin.com/in/{{ site.linkedin }}" title="{{ site.linkedin }} on LinkedIn" target="_blank">
+                <i class="icon icon-social-linkedin"></i>
+                <span class="label">LinkedIn</span>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if site.twitter %}
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/{{ site.twitter }}" title="{{ site.twitter }} on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.facebook %}
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/{{ site.facebook }}" title="{{ site.facebook }} on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            {% endif %}
+        
+            </ul>
+          </nav>
+
+        </div> <!-- navigation-wrapper -->
+      </div> <!-- panel-main__content -->
+    </div> <!-- panel-main__inner panel-inverted -->
+    <div class="panel-cover--overlay"></div>
+  </div> <!-- panel-main -->
+</header>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="{{ "index_style/js/main.js" | prepend: site.baseurl }}?{{site.time | date: '%s%N'}}"></script>
+
+<span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
+
+<header class="panel-cover" style="background-image"> <!-- background-cover.jpg @ uno.css -->
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+      <div class="panel-main__content">
+        <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
+          <img src="{{ site.baseurl }}/assets/images/{{ site.pic }}" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">{{ site.description }}</p>
+        <p class="panel-cover__description_tiny">{{ site.description_tiny }}</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              {% for link in site.data.index_links %}
+                <li class="navigation__item"><a href="/{{ link.link }}" title="{{ link.hover_text }}" class="blog-button">{{ link.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+  
+            {% if site.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.email }}" title="Email {{ site.email }}" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.github %}
+            <!-- GitHub -->
+            <li class="navigation__item">
+              <a href="https://www.github.com/{{ site.github }}" title="{{ site.github }} on GitHub" target="_blank">
+                <i class="icon icon-social-github"></i>
+                <span class="label">GitHub</span>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if site.linkedin %}
+            <!-- LinkedIn -->
+            <li class="navigation__item">
+              <a href="https://www.linkedin.com/in/{{ site.linkedin }}" title="{{ site.linkedin }} on LinkedIn" target="_blank">
+                <i class="icon icon-social-linkedin"></i>
+                <span class="label">LinkedIn</span>
+              </a>
+            </li>
+            {% endif %}
+
+            {% if site.twitter %}
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/{{ site.twitter }}" title="{{ site.twitter }} on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.facebook %}
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/{{ site.facebook }}" title="{{ site.facebook }} on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            {% endif %}
+        
+            </ul>
+          </nav>
+
+        </div> <!-- navigation-wrapper -->
+      </div> <!-- panel-main__content -->
+    </div> <!-- panel-main__inner panel-inverted -->
+    <div class="panel-cover--overlay"></div>
+  </div> <!-- panel-main -->
+</header>
+  

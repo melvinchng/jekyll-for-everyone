@@ -1,0 +1,19 @@
+<section class="section projects-section">
+    <h2 class="section-title"><i class="fa fa-archive"></i>Group Projects</h2>
+
+    {% for group_project in site.data.cv_group_projects %}
+    <div class="item">
+        <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title"><a href="{{ group_project.link }}">{{ group_project.title }}</a></h3>
+                <div class="time">{{ group_project.time }}</div>
+            </div><!--//upper-row-->
+            <div class="company">{{ group_project.company }}</div>
+        </div><!--//meta-->
+        <div class="details">
+            <p>{{ group_project.info }}</p>
+        </div><!--//details-->
+    </div><!--//item-->
+    {% endfor %}
+    
+</section><!--//section-->

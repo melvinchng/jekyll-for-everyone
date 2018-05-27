@@ -1,0 +1,10 @@
+{
+    "plugins": ["theme-default"],
+    "styles": {
+        "website": "styles/website.css"
+    },
+    "title": "Dating 101",
+    "author": "Melvin Ch'ng",
+    "language": "en",
+    "description": "Introduction To Dating"
+}
